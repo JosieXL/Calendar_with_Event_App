@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/teal_200">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/newTasktext"
+        android:background="@color/white"
+        android:hint="Type Event"
+        android:gravity="center"
+        android:inputType="textShortMessage"
+        android:layout_margin="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today Date"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/todayDate"
+            android:text="01/01/2000"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/timeButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_baseline_access_time"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:contentDescription="Set Event Time" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventTime"
+            android:text="00:00 AM"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Event"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:background="@null"
+        android:id="@+id/addEvent" />
+
+</LinearLayout>
