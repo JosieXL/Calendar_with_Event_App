@@ -114,7 +114,7 @@ public class CustomerCalendarView extends LinearLayout {
                         int minute = calendar.get(Calendar.MINUTE);
                         TimePickerDialog timePickerDialog =
                                 new TimePickerDialog(addView.getContext(),
-                                                     R.style.Theme_AppCompat_Dialog,
+                                                     R.style.ThemeOverlay_AppCompat_Dialog,
                                                      new TimePickerDialog.OnTimeSetListener() {
                                     @Override
                                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
